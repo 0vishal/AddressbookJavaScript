@@ -81,3 +81,10 @@ if (book.find(name => name.firstname == 'Sarvesh')) {
     book.find(name => name.setfirstname = 'Krunal');
 } else { console.log("This Name Contact not in addressBook"); }
 
+console.log("Before " + book.length);
+
+    if (book.find(name => name.firstname == 'Sarvesh')) {
+        book.splice(1, 1);
+
+    }
+console.log("After: " + book.length);
