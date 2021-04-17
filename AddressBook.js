@@ -88,3 +88,5 @@ console.log("Before " + book.length);
 
     }
 console.log("After: " + book.length);
+
+console.log(book.length + " contacts are in addressBook ")
