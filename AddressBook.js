@@ -76,3 +76,8 @@ try {
 
 
 console.log(book)
+
+if (book.find(name => name.firstname == 'Sarvesh')) {
+    book.find(name => name.setfirstname = 'Krunal');
+} else { console.log("This Name Contact not in addressBook"); }
+
