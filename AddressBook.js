@@ -58,13 +58,21 @@ class AddressBook {
             + this.city + " \nState= " + this.zip + " \nZip= " + this.zip + " \nPhoneNumber= " + this.phone_number + " \nEmail= " + this.email;
     }
 }
+var book = [];
 
-let addressbook = new AddressBook("Vishal","Salaskar","Ghatkopar","Mumbai","Maharashtra",400075,9898189891,"vishal@gmail.com");
-console.log(addressbook.toString());
+let addressbook1 = new AddressBook("Vishal","Salaskar","Ghatkopar","Mumbai","Maharashtra",400075,9898189891,"vishal@gmail.com");
+console.log(addressbook1.toString());
+book.push(addressbook1);
+
 
 try {
-    let addressbook = new AddressBook("Vishal","Salaskar","Ghatkopar","Mumbai","Maharashtra",400075,9898189891,"vishal@gmail.com");
-    console.log(addressbook.toString());
+    let addressbook2 = new AddressBook("Sarvesh","Salaskar","Ghatkopar","Mumbai","Maharashtra",400075,9898189891,"vishal@gmail.com");
+    console.log(addressbook2.toString());
+    book.push(addressbook2);
+
 } catch (e) {
     console.error(e);
 }
+
+
+console.log(book)
