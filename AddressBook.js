@@ -108,3 +108,9 @@ console.log("contact by city are: "+searchByCity);
 let state = book.map(eval => eval.state === 'Maharashtra' );
 let searchByState = state.reduce((a, b)=> a + b); 
 console.log("contact by state are: "+searchByState);
+
+
+
+console.log("view contact by city: \n"+book.filter(values => values.city == 'Mumbai'));
+console.log()
+console.log("view contact by state: \n"+book.filter(values => values.state == 'Maharashtra'));
